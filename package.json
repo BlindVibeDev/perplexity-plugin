@@ -1,0 +1,50 @@
+{
+  "name": "@elizaos/plugin-perplexity",
+  "version": "1.0.0",
+  "description": "Perplexity AI integration plugin for ElizaOS - Advanced AI-powered search with citations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "elizaos",
+    "elizaos-plugin",
+    "perplexity",
+    "ai",
+    "search",
+    "llm",
+    "citations",
+    "research",
+    "web-search"
+  ],
+  "author": "ElizaOS Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlindVibeDev/perplexity-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlindVibeDev/perplexity-plugin/issues"
+  },
+  "homepage": "https://github.com/BlindVibeDev/perplexity-plugin#readme",
+  "dependencies": {
+    "@ai16z/eliza": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  }
+}
